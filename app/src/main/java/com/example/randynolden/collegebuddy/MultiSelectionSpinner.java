@@ -13,7 +13,11 @@ import java.util.LinkedList;
 import java.util.List;
 /**
  * Created by randynolden on 1/15/16.
+ *
+ * This class allows my course requirement section to work.
+ * It allows the user to click multiple options and add them to a list.
  */
+
 public class MultiSelectionSpinner extends Spinner implements
         OnMultiChoiceClickListener {
     String[] _items = {"Exams","Homework","Reports","Midterm","Quizzes","Attendance","Other"};

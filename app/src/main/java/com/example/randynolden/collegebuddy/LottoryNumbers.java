@@ -8,6 +8,8 @@ import java.util.Random;
 
 /**
  * Created by randynolden on 8/15/15.
+ *
+ * This is a random number generator that may be removed.
  */
 public class LottoryNumbers extends Activity {
 

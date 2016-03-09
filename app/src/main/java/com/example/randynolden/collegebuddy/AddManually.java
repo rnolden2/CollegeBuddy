@@ -15,6 +15,8 @@ import java.io.File;
 
 /**
  * Created by randynolden on 1/10/16.
+ *
+ * This page allows user to manually add their course load information to a database stored within the App
  */
 public class AddManually extends Activity{
 

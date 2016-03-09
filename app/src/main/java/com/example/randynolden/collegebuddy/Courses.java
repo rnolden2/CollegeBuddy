@@ -20,6 +20,10 @@ import android.widget.LinearLayout;
 
 /**
  * Created by randynolden on 7/25/15.
+ *
+ * Here is where the user's saved courses will be displayed.
+ * I would like course name and number of credits to be displayed.
+ * The User can then click the course to see more info.
  */
 public class Courses extends Activity {
 

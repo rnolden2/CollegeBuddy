@@ -14,6 +14,8 @@ import android.widget.Spinner;
 
 /**
  * Created by randynolden on 7/25/15.
+ *
+ * Main page for Math related functions.
  */
 public class MathWorks extends Activity {
 

@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 /**
  * Created by randynolden on 8/15/15.
+ *
+ * An additional gratuity calculator function. May be removed.
  */
 
 

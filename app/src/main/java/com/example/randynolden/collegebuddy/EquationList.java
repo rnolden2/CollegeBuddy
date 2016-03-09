@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 /**
  * Created by randynolden on 8/15/15.
+ *
+ * Here I will list equations categorized by course.
+ * Possibly prioritize by what courses the user is signed up for.
  */
 public class EquationList extends Activity {
     public void onCreate(Bundle savedInstanceState) {
