@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/courses">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="All Courses"
+        android:id="@+id/courses_textView1"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Add Course"
+        android:id="@+id/button_addcourse"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView_courselist"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/popup"
+        android:visibility="invisible"
+        android:foregroundTintMode="src_over"
+        android:outlineProvider="paddedBounds"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:padding="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Syllabus"
+            android:id="@+id/button_uploadsyllabus"
+            android:layout_gravity="left|bottom"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Course"
+            android:id="@+id/button_addmanually"
+            android:layout_gravity="right|bottom"
+            android:clickable="true" />
+
+    </FrameLayout>
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Delete Course"
+        android:id="@+id/button_deletecourse"
+        android:clickable="false"
+        android:onClick="deleteDatabase"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show all Courses"
+        android:id="@+id/button_showcourses"
+        android:onClick="getContacts"
+        android:clickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Courses"
+        android:id="@+id/textView_courselist"
+        android:layout_below="@+id/button_showcourses"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

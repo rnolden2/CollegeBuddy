@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addmanually">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="@string/coursename"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText_coursename"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Credits"
+        android:id="@+id/creditstextview"
+        android:layout_below="@+id/editText_coursename"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/numberofcreditsspinner"
+        android:prompt="@string/prompt"
+        android:entries="@array/numberofcreditslist"
+        android:layout_below="@+id/creditstextview"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grading Style"
+        android:id="@+id/gradingstlyetextview"
+        android:layout_below="@+id/numberofcreditsspinner"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/gradingstlyespinner"
+        android:prompt="@string/prompt"
+        android:entries="@array/gradingstlyes"
+        android:layout_below="@+id/gradingstlyetextview"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Requirements"
+        android:id="@+id/requirementstextview"
+        android:layout_below="@+id/gradingstlyespinner"
+        android:layout_alignParentStart="true" />
+
+    <com.example.randynolden.collegebuddy.MultiSelectionSpinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/requirementspinner"
+        android:layout_below="@+id/requirementstextview"
+        android:prompt="@string/prompt"
+
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/button_addtocourselist"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="addCourse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Advance"
+        android:id="@+id/textView9"
+        android:layout_above="@+id/button_addtocourselist"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

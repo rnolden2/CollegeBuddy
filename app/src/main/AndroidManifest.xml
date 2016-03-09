@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.randynolden.collegebuddy" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:debuggable="true"
+        tools:ignore="HardcodedDebugMode">
+
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MathWorks"
+            android:label="@string/math" >
+            <intent-filter>
+                <action android:name="android.intent.action.MATHWORKS" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Courses"
+            android:label="@string/courses" >
+            <intent-filter>
+                <action android:name="android.intent.action.COURSES" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddManually"
+            android:label="@string/addmanually" >
+        <intent-filter>
+            <action android:name="android.intent.action.ADDMANUALLY" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Orgs"
+            android:label="@string/orgs" >
+            <intent-filter>
+                <action android:name="android.intent.action.ORGS" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GPA"
+            android:label="@string/gpa" >
+            <intent-filter>
+                <action android:name="android.intent.action.GPA" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Gratuity"
+            android:label="@string/tips" >
+            <intent-filter>
+                <action android:name="android.intent.action.Gratuity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LottoryNumbers"
+            android:label="@string/lottery" >
+            <intent-filter>
+                <action android:name="android.intent.action.Lottory" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EquationList"
+            android:label="@string/equations" >
+            <intent-filter>
+                <action android:name="android.intent.action.Equations" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NSBENews"
+            android:label="@string/news" >
+            <intent-filter>
+                <action android:name="android.intent.action.NSBENews" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
